@@ -1,6 +1,6 @@
 <template lang="pug">
     page-header-wrapper
-        .car 车辆管理
+        .car vue子应用 车辆管理
 </template>
 
 <script>

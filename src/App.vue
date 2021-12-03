@@ -5,7 +5,7 @@
 
 <style lang="less">
 @import './global.less';
-#app {
+#vue-app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

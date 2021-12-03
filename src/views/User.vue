@@ -1,6 +1,6 @@
 <template lang="pug">
     page-header-wrapper
-        .user 用户管理
+        .user vue子应用 用户管理
 </template>
 
 <script>

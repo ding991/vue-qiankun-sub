@@ -1,4 +1,4 @@
-# vue-main
+# vue-qiankun-sub
 
 ```vue + antd vue```
 ## Project setup

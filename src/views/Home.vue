@@ -1,6 +1,6 @@
 <template lang="pug">
     page-header-wrapper
-        .home home页面
+        .home vue子应用 home页面
 </template>
 
 <script>

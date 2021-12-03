@@ -14,6 +14,10 @@ export const routeIconConfig = {
     home: 'home',
 }
 
+let prefix = ''
+if (window.__POWERED_BY_QIANKUN__) {
+    prefix = '/sub-vue'
+}
 export const asyncRouterMap = [
     {
         path: '/',
@@ -23,7 +27,7 @@ export const asyncRouterMap = [
         redirect: defaultSettings.defaultRoute,
         children: [
             {
-                path: '/home',
+                path: prefix + '/home',
                 name: 'Home',
                 component: () => import('@/views/Home.vue'),
                 meta: {
@@ -32,17 +36,17 @@ export const asyncRouterMap = [
                 },
             },
             {
-                path: '/table',
+                path: prefix + '/table',
                 name: 'Table',
                 component: RouteView,
-                redirect: '/table/user',
+                redirect: prefix + '/table/user',
                 meta: {
                     title: '表格',
                     keepAlive: true,
                 },
                 children: [
                     {
-                        path: '/table/user',
+                        path: prefix + '/table/user',
                         name: 'User',
                         component: () => import('@/views/User.vue'),
                         meta: {
@@ -51,7 +55,7 @@ export const asyncRouterMap = [
                         },
                     },
                     {
-                        path: '/table/carManage',
+                        path: prefix + '/table/carManage',
                         name: 'CarManage',
                         component: () => import('@/views/CarManage'),
                         meta: {
@@ -62,7 +66,7 @@ export const asyncRouterMap = [
                 ],
             },
             {
-                path: '/about',
+                path: prefix + '/about',
                 name: 'About',
                 component: () => import('@/views/About.vue'),
                 meta: {

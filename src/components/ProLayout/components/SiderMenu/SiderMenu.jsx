@@ -38,6 +38,7 @@ export const SiderMenuProps = {
         PropTypes.bool,
     ]),
     menuHeight: PropTypes.number.def(0),
+    hideMenus: PropTypes.bool,
 }
 
 export const defaultRenderLogo = (h, logo) => {
